@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 6, 2013 10:35:26 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.executionist.Checklists" table="checklists" catalog="executionist">
+        <id name="MCheckId" type="java.lang.Long">
+            <column name="m_checkId" />
+            <generator class="identity" />
+        </id>
+        <property name="MTemplateId" type="long">
+            <column name="m_templateId" not-null="true" />
+        </property>
+        <property name="MImportance" type="java.lang.Byte">
+            <column name="m_importance" />
+        </property>
+        <property name="MStatus" type="java.lang.Byte">
+            <column name="m_status" />
+        </property>
+        <property name="MIsForward" type="java.lang.Byte">
+            <column name="m_isForward" />
+        </property>
+        <property name="MSeverity" type="java.lang.Byte">
+            <column name="m_severity" />
+        </property>
+        <property name="MStartTimestamp" type="timestamp">
+            <column name="m_startTimestamp" length="19" />
+        </property>
+        <property name="MEndTimestamp" type="timestamp">
+            <column name="m_endTimestamp" length="19" />
+        </property>
+        <property name="MIsTimeBound" type="java.lang.Byte">
+            <column name="m_isTimeBound" />
+        </property>
+        <property name="MIsEventBased" type="java.lang.Byte">
+            <column name="m_isEventBased" />
+        </property>
+        <property name="MDaysInWeek" type="java.lang.Byte">
+            <column name="m_daysInWeek" />
+        </property>
+    </class>
+</hibernate-mapping>

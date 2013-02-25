@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="executionist"/>
+  <table-filter match-name="clientinfo"/>
+  <table-filter match-name="checklists"/>
+  <table-filter match-name="department"/>
+  <table-filter match-name="checklisttemplate"/>
+  <table-filter match-name="projectrelations"/>
+  <table-filter match-name="checklistcategory"/>
+  <table-filter match-name="projectinfo"/>
+  <table-filter match-name="logininfo"/>
+  <table-filter match-name="assignmentlogs"/>
+  <table-filter match-name="designation"/>
+  <table-filter match-name="company"/>
+  <table-filter match-name="employee"/>
+</hibernate-reverse-engineering>

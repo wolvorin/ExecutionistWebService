@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 6, 2013 10:35:26 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.executionist.Assignmentlogs" table="assignmentlogs" catalog="executionist">
+        <id name="MTxId" type="java.lang.Long">
+            <column name="m_txId" />
+            <generator class="identity" />
+        </id>
+        <property name="MCompanyId" type="long">
+            <column name="m_companyId" not-null="true" />
+        </property>
+        <property name="MFromId" type="long">
+            <column name="m_fromId" not-null="true" />
+        </property>
+        <property name="MToId" type="long">
+            <column name="m_toId" not-null="true" />
+        </property>
+        <property name="MCheckId" type="long">
+            <column name="m_checkId" not-null="true" />
+        </property>
+        <property name="MTimestamp" type="timestamp">
+            <column name="m_timestamp" length="19" />
+        </property>
+        <property name="MAction" type="java.lang.Byte">
+            <column name="m_action" />
+        </property>
+        <property name="MComments" type="string">
+            <column name="m_comments" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/executionist?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">bhushan</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</property>
+    <property name="hibernate.format_sql">true</property>
+    <mapping resource="com/executionist/Clientinfo.hbm.xml"/>
+    <mapping resource="com/executionist/Checklisttemplate.hbm.xml"/>
+    <mapping resource="com/executionist/Checklistcategory.hbm.xml"/>
+    <mapping resource="com/executionist/Logininfo.hbm.xml"/>
+    <mapping resource="com/executionist/Checklists.hbm.xml"/>
+    <mapping resource="com/executionist/Assignmentlogs.hbm.xml"/>
+    <mapping resource="com/executionist/Companyevents.hbm.xml"/>
+    <mapping resource="com/executionist/Employee.hbm.xml"/>
+    <mapping resource="com/executionist/Designation.hbm.xml"/>
+    <mapping resource="com/executionist/Department.hbm.xml"/>
+    <mapping resource="com/executionist/Projectinfo.hbm.xml"/>
+    <mapping resource="com/executionist/Projectrelations.hbm.xml"/>
+    <mapping resource="com/executionist/Company.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

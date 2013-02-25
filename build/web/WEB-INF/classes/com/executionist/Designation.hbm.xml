@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 6, 2013 10:35:26 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.executionist.Designation" table="designation" catalog="executionist">
+        <id name="MDesignationId" type="java.lang.Long">
+            <column name="m_designationId" />
+            <generator class="identity" />
+        </id>
+        <property name="MDesignationName" type="string">
+            <column name="m_designationName" length="225" />
+        </property>
+        <property name="MCompanyId" type="long">
+            <column name="m_companyId" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

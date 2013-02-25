@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 6, 2013 10:35:26 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.executionist.Companyevents" table="companyevents" catalog="executionist">
+        <id name="MEventId" type="long">
+            <column name="m_eventId" />
+            <generator class="assigned" />
+        </id>
+        <property name="MEventName" type="string">
+            <column name="m_eventName" length="256" />
+        </property>
+        <property name="MDeptId" type="long">
+            <column name="m_deptId" not-null="true" />
+        </property>
+        <property name="MStartTime" type="timestamp">
+            <column name="m_startTime" length="19" />
+        </property>
+        <property name="MEndTime" type="timestamp">
+            <column name="m_endTime" length="19" />
+        </property>
+        <property name="MStatus" type="java.lang.Byte">
+            <column name="m_status" />
+        </property>
+        <property name="MCompanyId" type="java.lang.Long">
+            <column name="m_companyId" />
+        </property>
+    </class>
+</hibernate-mapping>

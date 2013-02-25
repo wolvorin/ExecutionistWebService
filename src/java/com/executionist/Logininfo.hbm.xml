@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 6, 2013 10:35:26 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.executionist.Logininfo" table="logininfo" catalog="executionist">
+        <id name="MEmailId" type="string">
+            <column name="m_emailId" />
+            <generator class="assigned" />
+        </id>
+        <property name="MPassword" type="string">
+            <column name="m_password" />
+        </property>
+    </class>
+</hibernate-mapping>
